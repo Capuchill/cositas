@@ -5,7 +5,8 @@ from conexion import Tarea, engine
 import pandas as pd
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-session = SessionLocal()
+session = SessionLocal() 
+#ola
 
 def agregar_tarea(titulo, descripcion=None, estado=False, fecha_creacion=None, fecha_vencimiento=None):
     nueva_tarea = Tarea(
